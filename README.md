@@ -1,41 +1,235 @@
 <!-- Please do not change this html logo with link -->
-<a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
+<a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="200"/></a>
 
-# Update the title for [ADD_REPO_NAME_HERE] here
+# ADC AC voltage measurement MPLABX example
 
-<!-- This is where the introduction to the example goes, including mentioning the peripherals used -->
+## Introduction
+The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to measure the voltage difference between the two input channels. This example demonstrates the AC voltage measurement using differential ADC.
 
-## Related Documentation
+**Note:** ***This example could be generated with all the pin variants of AVR-DA family of microcontrollers.***
 
-<!-- Any information about an application note or tech brief can be linked here. Use unbreakable links!
-     In addition a link to the device family landing page and relevant peripheral pages as well:
-     - [AN3381 - Brushless DC Fan Speed Control Using Temperature Input and Tachometer Feedback](https://microchip.com/00003381/)
-     - [PIC18F-Q10 Family Product Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic18f-q10-product-family) -->
+## Useful links
 
-## Software Used
+- [AVR128DA48 Product Page](https://www.microchip.com/wwwproducts/en/AVR128DA28 "AVR128DA48 Product Page")
+- [AVR128DA48 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=avr128da48 "AVR128DA48 Code Examples on GitHub")
+- [AVR128DA48 Project Examples in START](https://start.atmel.com/#examples/AVR128DA48CuriosityNano "AVR128DA48 Project Examples in START")
+- [ADC AC voltage measurement - Studio Example]( https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-start-example.git "ADC AC voltage measurement - Studio Example")
 
-<!-- All software used in this example must be listed here. Use unbreakable links!
-     - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
-     - MPLAB® XC8 2.10 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
-     - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - Microchip PIC18F-Q Series Device Support (1.4.109) or newer [(packs.download.microchip.com/)](https://packs.download.microchip.com/) -->
+## Demo Description
 
-## Hardware Used
+<p align="center">
+  <img width=auto height=auto src="images/blockdiagram.png">
+  <br><strong>Fig 1: Block diagram view of the system used for AC voltage measurement<br>
+</p>
 
-<!-- All hardware used in this example must be listed here. Use unbreakable links!
-     - PIC18F47Q10 Curiosity Nano [(DM182029)](https://www.microchip.com/Developmenttools/ProductDetails/DM182029)
-     - Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162)
-     - POT Click board™ [(MIKROE-3402)](https://www.mikroe.com/pot-click) -->
+In this demo,
 
-## Setup
+* AC input to be measured is fed to the voltage stepdown circuit.
+* Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig 2.  And reference offset voltage is given as input to the -ve channel of the ADC. 
 
-<!-- Explain how to connect hardware and set up software. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+<p align="center">
+  <img width=auto height=auto src="images/waveform.png">
+  <br><strong>Fig 2: Waveform of AC signal input to the MCU<br>
+</p>
 
-## Operation
+* Periodic interrupt is used as a trigger for the ADC to start the conversion for every 500 microsecs delay. 
+* After capturing the required number of samples , RMS voltage is calculated using the captured sampled result and the formulae used for calculation is 
 
-<!-- Explain how to operate the example. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+<p align="center">
+  <img width=auto height=auto src="images/formula.png">
+</p>
 
-## Summary
+<p align="center">
+  <img width=auto height=auto src="images/formula1.png">
+</p>
 
-<!-- Summarize what the example has shown -->
+* Calculated RMS voltage is displayed on terminal window through USART peripheral.
+
+## Application code flow diagram
+
+<p align="center">
+  <img width=auto height=auto src="images/firmwareflowchart.png">
+  <br><strong>Fig 3: Application Code flow diagram<br>
+</p>
+
+## Software used:
+
+- [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
+- [XC8 Compiler v2.20](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
+- [MPLAB Code Configurator (MCC) v3.95.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v3.95.0")
+- [AVR8bit Lib v2.3.0](https://www.microchip.com/mplab/mplab-code-configurator "AVR8bit Lib v2.3.0")
+- [AVR-Dx DFP 1.1.40](https://packs.download.atmel.com/ "AVR-Dx DFP 1.1.40")
+
+**Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
+
+## Hardware used:
+
+* AVR128DA48 Curiosity Nano Evaluation Kit [[Part Number:DM164151]](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164151 "[Part Number:DM164151]")
+
+
+<p align="center">
+  <img width=600 height=auto src="images/curiositynanoboard.png">
+  <br><strong>Fig 4 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
+</p> 
+
+## Hardware setup:
+
+<p align="center">
+  <img width=600 height=auto src="images/hardwaresetup.png">
+  <br><strong>Fig 5 : Hardware setup<br>
+</p> 
+
+<p align="center">
+  <img width=600 height=auto src="images/voltagestepdownblockdiagram.png">
+  <br><strong>Fig 6 : Voltage stepdown block diagram<br>
+</p> 
+
+<p align="center">
+  <img width=600 height=auto src="images/hardwareconnectionsblockdiagram.png">
+  <br><strong>Fig 7 : Hardware connections diagram<br>
+</p> 
+
+## Demo Operation
+
+* Setup the hardware as shown in Hardware connections diagram in Fig 7 of the hardware setup section in Fig 5.
+* After the curiosity nano board is powered up, load the application firmware to AVR128DA48 microcontroller.
+* Set the desired AC input voltage and frequency from the AC source and check the data displayed on terminal window.
+* Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 8.
+
+<p align="center">
+  <img width=auto height=auto src="images/demooutput1.png">
+  <br><strong>Fig 8 : Observed output on terminal window for 50V AC input voltage and 50Hz frequency<br>
+</p> 
+
+* Set the AC input voltage to 250V and frequency to 50Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 9.
+
+<p align="center">
+  <img width=auto height=auto src="images/demooutput2.png">
+  <br><strong>Fig 9 : Observed output on terminal window for 250V AC input voltage and 50Hz frequency<br>
+</p> 
+
+* Set the AC input voltage to 50V and frequency to 60Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 10.
+
+<p align="center">
+  <img width=auto height=auto src="images/demooutput3.png">
+  <br><strong>Fig 10 : Observed output on terminal window for 50V AC input voltage and 60Hz frequency<br>
+</p>
+
+* Set the AC input voltage to 110V and frequency to 60Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 11.
+
+<p align="center">
+  <img width=auto height=auto src="images/demooutput4.png">
+  <br><strong>Fig 11 : Observed output on terminal window for 110V AC input voltage and 60Hz frequency<br>
+</p>
+
+## Conclusion : 
+
+The demo provides an example of differential ADC application using the 12-bit ADC peripheral on the new AVR-DA family. For more details about the peripheral’s configuration refer Appendix Atmel START Project creation. 
+
+## Appendix: MPLAB X MCC Project creation
+
+Configure ADC, RTC, VREF, USART peripherals through Microchip Code Configurator (MCC) and generate MPLAB project.
+### Steps for creating a new project
+1.	Open **MPLAB X IDE** latest version.
+2.	Go to **File---> New Project** (click).
+3.	Select (Categories) **Microchip Embedded--->**(Projects) **Standalone Project**. (Press Next)
+4.	Select Device---> Enter **Device name** (Microcontroller Part Number: in this project enter AVR128DA48) (Press Next).
+5.	Select **Tool** is optional (Press Next).
+6.	Select Latest **XC8 Compiler**. (Press Next).
+7.	Enter **Project Name** and **File location**. (Press Finish).
+8.	Click on **MCC** symbol to configure peripherals as shown in Fig 12
+
+<p align="center">
+  <img width=auto height=auto src="images/MCC-Icon.png">
+  <br>Fig 12: MCC symbol on MPLAB X IDE<br>
+</p>
+
+9.	Add ADC, VREF, USART and RTC peripherals to the project .
+* Click on Resource Management [MCC], located on top side of the window.
+* To add peripherals to the project, select ADC, VREF, RTC, USART	 under Device Resources and by clicking on (+) button as shown in Fig 13.
+* All selected peripherals should show up under Peripherals in Project Resources.
+
+<p align="center">
+  <img width=auto height=auto src="images/peripheral-list.png">
+  <br>Fig 13: Add peripherals in Project Resources<br>
+</p>
+
+## 10.	System module configuration:
+* In Resource Management tab, Select System Module (Under Project Resources)---> Select Easy Setup.
+* The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency. 
+* To generate 4MHz frequency as a system clock , uncheck the Prescaler Enable option as shown in Fig 14.
+
+<p align="center">
+  <img width=auto height=auto src="images/systemModule.png">
+  <br><strong>Fig 14: System module configuration window <br>
+</p>
+
+## 11.	USART configuration:
+* USART 1 peripheral is used to transmit the measured AC voltage onto the terminal window. Configure the USART1 peripheral by following the steps as shown in the Fig 15.
+* In Project Resources tab, Select USART 1 (under Peripherals)---> Select Easy Setup.
+* Check the Printf support option, which allows to print a sequence of characters.
+* Set the Baud Rate to 9600.
+
+<p align="center">
+  <img width=auto height=auto src="images/usart.png">
+  <br><strong>Fig 15: USART configuration window <br>
+</p>
+
+## 12.	RTC configuration:
+* RTC is configured in PIT (Periodic Interrupt Timer) mode , which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
+* In Project Resources tab, Select RTC (under Peripherals)--> Select Easy Setup.
+* Select the Internal 32.768KHz oscillator option from the dropdown menu against the RTC Clock Source Selection field, which uses 32.768 kHz oscillator as a clock source for the PIT.
+* Check the PITEN Enable option to enable the periodic interrupt timer mode.
+* Select the period RTC Clock Cycles 16 option from the drop-down menu against the Period Selection field which generates 500 microsec delay.
+* Check the Periodic Interrupt Enable option to generate periodic interrupt after specified delay.
+
+<p align="center">
+  <img width=auto height=auto src="images/rtc.png">
+  <br><strong>Fig 16: RTC configuration window <br>
+</p>
+
+## 13.	VREF configuration :
+* VREF is configured to provide reference voltage for ADC peripheral. Configure the VREF peripheral by following the steps as shown in the Fig 17.
+* In Project Resources tab, Select VREF (under Peripherals)--> Select Easy Setup.
+* Check the Enable Force ADC Voltage Reference option to enable the reference voltage for ADC peripheral.  
+* Select the reference voltage VDD as reference from the drop-down menu against the ADC Voltage Reference.   
+
+<p align="center">
+  <img width=auto height=auto src="images/vref.png">
+  <br><strong>Fig 17: VREF configuration window <br>
+</p>
+
+## 14.	Global Interrupt configuration: 
+* To generate any interrupt like periodic interrupt, it is required to enable the Global Interrupt Enable.
+* In Project Resources tab, Select Interrupt Manager (under System)---> Select Easy Setup.
+* Check the Global Interrupt Enable option which enables global interrupt as shown in Fig 18.
+
+<p align="center">
+  <img width=auto height=auto src="images/globalinterrupt.png">
+  <br><strong>Fig 18: Global Interrupt configuration window <br>
+</p>
+
+## 15.	ADC configuration:
+* ADC is configured in differential mode and it is used to measure the ac voltage of the input signal. Configure the ADC peripheral by following the steps as shown in Fig 19.
+* In Project Resources tab, Select ADC0 (under Peripherals)---> Select Easy Setup.
+* Configure ADC in differential mode by selecting enabled option from the dropdown menu against the Differential Mode Conversion field.
+* Check the Enable ADC option, which enables the ADC.
+* Set the ADC sampling frequency to 114.285KHz.
+* Check the RESRDY: Result Ready Interrupt Enable option, which enables the ADC result ready interrupt.
+
+<p align="center">
+  <img width=auto height=auto src="images/adc.png">
+  <br><strong>Fig 19: ADC configuration window <br>
+</p>
+
+## 16.	Pin manager configuration:
+* Configure I/O pin PD6 as input to the positive channel of the differential ADC , where step downed voltage with offset addition is fed as input to this positive channel . 
+* Configure I/O pin PD7 as input to the negative channel of the differential ADC, where reference voltage is fed as input to this negative channel.
+
+<p align="center">
+  <img width=auto height=auto src="images/pinmodule.png">
+  <br><strong>Fig 20: Pin manager configuration window<br>
+</p>
+
+
+
