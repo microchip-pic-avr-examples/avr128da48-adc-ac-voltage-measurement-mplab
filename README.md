@@ -1,12 +1,12 @@
 <!-- Please do not change this html logo with link -->
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="200"/></a>
 
-# ADC AC voltage measurement MPLABX example
+# AC voltage measurement using Differential ADC
 
 ## Introduction
 The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to measure the voltage difference between the two input channels. This example demonstrates the AC voltage measurement using differential ADC.
 
-**Note:** ***This example could be generated with all the pin variants of AVR-DA family of microcontrollers.***
+**Note:** ***This example could be generated with all the pin variants of AVR DA family of microcontrollers.***
 
 ## Useful links
 
@@ -25,7 +25,7 @@ The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to
 In this demo,
 
 * AC input to be measured is fed to the voltage stepdown circuit.
-* Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig 2.  And reference offset voltage is given as input to the -ve channel of the ADC. 
+* Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig 2  and reference offset voltage is given as input to the -ve channel of the ADC. 
 
 <p align="center">
   <img width=auto height=auto src="images/waveform.png">
@@ -33,7 +33,7 @@ In this demo,
 </p>
 
 * Periodic interrupt is used as a trigger for the ADC to start the conversion for every 500 microsecs delay. 
-* After capturing the required number of samples , RMS voltage is calculated using the captured sampled result and the formulae used for calculation is 
+* After capturing the required number of samples, RMS voltage is calculated using the captured sampled result and the formulae used for calculation is 
 
 <p align="center">
   <img width=auto height=auto src="images/formula.png">
@@ -58,7 +58,7 @@ In this demo,
 - [XC8 Compiler v2.20](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
 - [MPLAB Code Configurator (MCC) v3.95.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v3.95.0")
 - [AVR8bit Lib v2.3.0](https://www.microchip.com/mplab/mplab-code-configurator "AVR8bit Lib v2.3.0")
-- [AVR-Dx DFP 1.1.40](https://packs.download.atmel.com/ "AVR-Dx DFP 1.1.40")
+- [AVR-Dx DFP 1.4.75](https://packs.download.atmel.com/ "AVR-Dx DFP 1.4.75")
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
@@ -128,7 +128,7 @@ The demo provides an example of differential ADC application using the 12-bit AD
 
 ## Appendix: MPLAB X MCC Project creation
 
-Configure ADC, RTC, VREF, USART peripherals through Microchip Code Configurator (MCC) and generate MPLAB project.
+Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurator (MCC) and generate MPLAB project.
 ### Steps for creating a new project
 1.	Open **MPLAB X IDE** latest version.
 2.	Go to **File---> New Project** (click).
@@ -157,7 +157,7 @@ Configure ADC, RTC, VREF, USART peripherals through Microchip Code Configurator 
 ## 10.	System module configuration:
 * In Resource Management tab, Select System Module (Under Project Resources)---> Select Easy Setup.
 * The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency. 
-* To generate 4MHz frequency as a system clock , uncheck the Prescaler Enable option as shown in Fig 14.
+* To generate 4MHz frequency as a system clock, uncheck the Prescaler Enable option as shown in Fig 14.
 
 <p align="center">
   <img width=auto height=auto src="images/systemModule.png">
@@ -176,7 +176,7 @@ Configure ADC, RTC, VREF, USART peripherals through Microchip Code Configurator 
 </p>
 
 ## 12.	RTC configuration:
-* RTC is configured in PIT (Periodic Interrupt Timer) mode , which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
+* RTC is configured in PIT (Periodic Interrupt Timer) mode, which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
 * In Project Resources tab, Select RTC (under Peripherals)--> Select Easy Setup.
 * Select the Internal 32.768KHz oscillator option from the dropdown menu against the RTC Clock Source Selection field, which uses 32.768 kHz oscillator as a clock source for the PIT.
 * Check the PITEN Enable option to enable the periodic interrupt timer mode.
@@ -223,7 +223,7 @@ Configure ADC, RTC, VREF, USART peripherals through Microchip Code Configurator 
 </p>
 
 ## 16.	Pin manager configuration:
-* Configure I/O pin PD6 as input to the positive channel of the differential ADC , where step downed voltage with offset addition is fed as input to this positive channel . 
+* Configure I/O pin PD6 as input to the positive channel of the differential ADC, where step downed voltage with offset addition is fed as input to this positive channel . 
 * Configure I/O pin PD7 as input to the negative channel of the differential ADC, where reference voltage is fed as input to this negative channel.
 
 <p align="center">
