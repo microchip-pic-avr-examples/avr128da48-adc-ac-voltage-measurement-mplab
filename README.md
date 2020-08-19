@@ -13,13 +13,13 @@ The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to
 - [AVR128DA48 Product Page](https://www.microchip.com/wwwproducts/en/AVR128DA28 "AVR128DA48 Product Page")
 - [AVR128DA48 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=avr128da48 "AVR128DA48 Code Examples on GitHub")
 - [AVR128DA48 Project Examples in START](https://start.atmel.com/#examples/AVR128DA48CuriosityNano "AVR128DA48 Project Examples in START")
-- [ADC AC voltage measurement - Studio Example]( https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-start-example.git "ADC AC voltage measurement - Studio Example")
+- [ADC AC voltage measurement - Studio Example]( https://github.com/microchip-pic-avr-examples/avr128da48-adc-ac-voltage-measurement-mplab.git "ADC AC voltage measurement - Studio Example")
 
 ## Demo Description
 
 <p align="center">
   <img width=auto height=auto src="images/blockdiagram.png">
-  <br><strong>Fig 1: Block diagram view of the system used for AC voltage measurement<br>
+  <br>Fig 1: Block diagram view of the system used for AC voltage measurement<br>
 </p>
 
 In this demo,
@@ -29,7 +29,7 @@ In this demo,
 
 <p align="center">
   <img width=auto height=auto src="images/waveform.png">
-  <br><strong>Fig 2: Waveform of AC signal input to the MCU<br>
+  <br>Fig 2: Waveform of AC signal input to the MCU<br>
 </p>
 
 * Periodic interrupt is used as a trigger for the ADC to start the conversion for every 500 microsecs delay. 
@@ -49,7 +49,7 @@ In this demo,
 
 <p align="center">
   <img width=auto height=auto src="images/firmwareflowchart.png">
-  <br><strong>Fig 3: Application Code flow diagram<br>
+  <br>Fig 3: Application Code flow diagram<br>
 </p>
 
 ## Software used:
@@ -58,7 +58,7 @@ In this demo,
 - [XC8 Compiler v2.20](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
 - [MPLAB Code Configurator (MCC) v3.95.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v3.95.0")
 - [AVR8bit Lib v2.3.0](https://www.microchip.com/mplab/mplab-code-configurator "AVR8bit Lib v2.3.0")
-- [AVR-Dx DFP 1.4.75](https://packs.download.atmel.com/ "AVR-Dx DFP 1.4.75")
+- [AVR-Dx DFP 1.4.75](https://packs.download.microchip.com/ "AVR-Dx DFP 1.4.75")
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
@@ -69,57 +69,57 @@ In this demo,
 
 <p align="center">
   <img width=600 height=auto src="images/curiositynanoboard.png">
-  <br><strong>Fig 4 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
+  <br>Fig 4 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
 </p> 
 
 ## Hardware setup:
 
 <p align="center">
   <img width=600 height=auto src="images/hardwaresetup.png">
-  <br><strong>Fig 5 : Hardware setup<br>
+  <br>Fig 5 : Hardware setup<br>
 </p> 
 
 <p align="center">
   <img width=600 height=auto src="images/voltagestepdownblockdiagram.png">
-  <br><strong>Fig 6 : Voltage stepdown block diagram<br>
+  <br>Fig 6 : Voltage stepdown block diagram<br>
 </p> 
 
 <p align="center">
   <img width=600 height=auto src="images/hardwareconnectionsblockdiagram.png">
-  <br><strong>Fig 7 : Hardware connections diagram<br>
+  <br>Fig 7 : Hardware connections diagram<br>
 </p> 
 
 ## Demo Operation
 
-* Setup the hardware as shown in Hardware connections diagram in Fig 7 of the hardware setup section in Fig 5.
+* Setup the hardware as shown in hardware setup section and in Fig 5.
 * After the curiosity nano board is powered up, load the application firmware to AVR128DA48 microcontroller.
 * Set the desired AC input voltage and frequency from the AC source and check the data displayed on terminal window.
 * Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 8.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput1.png">
-  <br><strong>Fig 8 : Observed output on terminal window for 50V AC input voltage and 50Hz frequency<br>
+  <br>Fig 8 : Observed output on terminal window for 50V AC input voltage and 50Hz frequency<br>
 </p> 
 
 * Set the AC input voltage to 250V and frequency to 50Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 9.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput2.png">
-  <br><strong>Fig 9 : Observed output on terminal window for 250V AC input voltage and 50Hz frequency<br>
+  <br>Fig 9 : Observed output on terminal window for 250V AC input voltage and 50Hz frequency<br>
 </p> 
 
 * Set the AC input voltage to 50V and frequency to 60Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 10.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput3.png">
-  <br><strong>Fig 10 : Observed output on terminal window for 50V AC input voltage and 60Hz frequency<br>
+  <br>Fig 10 : Observed output on terminal window for 50V AC input voltage and 60Hz frequency<br>
 </p>
 
 * Set the AC input voltage to 110V and frequency to 60Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 11.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput4.png">
-  <br><strong>Fig 11 : Observed output on terminal window for 110V AC input voltage and 60Hz frequency<br>
+  <br>Fig 11 : Observed output on terminal window for 110V AC input voltage and 60Hz frequency<br>
 </p>
 
 ## Conclusion : 
@@ -161,7 +161,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/systemModule.png">
-  <br><strong>Fig 14: System module configuration window <br>
+  <br>Fig 14: System module configuration window <br>
 </p>
 
 ## 11.	USART configuration:
@@ -172,7 +172,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/usart.png">
-  <br><strong>Fig 15: USART configuration window <br>
+  <br>Fig 15: USART configuration window <br>
 </p>
 
 ## 12.	RTC configuration:
@@ -185,7 +185,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/rtc.png">
-  <br><strong>Fig 16: RTC configuration window <br>
+  <br>Fig 16: RTC configuration window <br>
 </p>
 
 ## 13.	VREF configuration :
@@ -196,7 +196,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/vref.png">
-  <br><strong>Fig 17: VREF configuration window <br>
+  <br>Fig 17: VREF configuration window <br>
 </p>
 
 ## 14.	Global Interrupt configuration: 
@@ -206,7 +206,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/globalinterrupt.png">
-  <br><strong>Fig 18: Global Interrupt configuration window <br>
+  <br>Fig 18: Global Interrupt configuration window <br>
 </p>
 
 ## 15.	ADC configuration:
@@ -219,7 +219,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/adc.png">
-  <br><strong>Fig 19: ADC configuration window <br>
+  <br>Fig 19: ADC configuration window <br>
 </p>
 
 ## 16.	Pin manager configuration:
@@ -228,7 +228,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/pinmodule.png">
-  <br><strong>Fig 20: Pin manager configuration window<br>
+  <br>Fig 20: Pin manager configuration window<br>
 </p>
 
 
