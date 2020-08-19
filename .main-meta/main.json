@@ -4,27 +4,27 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "version": "1.0.1",
+        "displayName": "AC Voltage measurement MPLABX example",
+        "projectName": "avr128da48-adc-ac-voltage-measurement-mplab",
+        "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "MPLABX",
+            "semverRange": ">=5.40.0"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "XC8",
+				"semverRange": "^2.20.0"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Dx_DFP",
+            "semverRange": "^1.3.65"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=3.95.0"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,26 +32,45 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "AVR128DA48",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
+            "MCC",
             [
-               "Peripherals", ""
+               "Peripherals", "ADC"
             ],
             [
-               "Peripherals", ""
-            ]            			
+               "Peripherals", "PIT"
+            ],
+			[
+               "Peripherals", "USART"
+            ],
+			[
+               "Peripherals", "INTERRUPT"
+            ],
+						[
+               "Peripherals", "GPIO"
+            ],         			
         ],
         "peripherals": [
-            "",""
+            "ADC","PIT","USART","INTERRUPT","GPIO"
         ],
         "keywords": [
-            "",
-            ""			
+            "MCC",
+			"AVR DA",
+			"AVR128DA48",
+			"AC voltage",
+			"Analog",
+            "differential adc",
+		    "RMS",
+			"Samples",
+			"Frequency",
+			"50Hz and 60Hz",
+			"Positive channel",
+			"Negative channel"			
         ],
 		"additionalData": {
 			"longDescription": {
