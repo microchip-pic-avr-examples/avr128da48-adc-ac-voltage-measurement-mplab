@@ -53,7 +53,7 @@
             ],
 			[
                "Peripherals", "GPIO"
-            ],         			
+            ]         			
         ],
         "peripherals": [
             "ADC","PIT","USART","INTERRUPT","GPIO"
