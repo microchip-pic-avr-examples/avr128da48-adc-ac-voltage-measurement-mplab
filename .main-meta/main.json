@@ -3,7 +3,7 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.",
+        "name": "com.microchip.mcu8.mplabx.project.avr128da48-adc-ac-voltage-measurement-mplab",
         "version": "1.0.1",
         "displayName": "AC Voltage measurement MPLABX example",
         "projectName": "avr128da48-adc-ac-voltage-measurement-mplab",
