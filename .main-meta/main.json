@@ -7,7 +7,7 @@
         "version": "2.0.0",
         "displayName": "AC Voltage measurement MPLABX example",
         "projectName": "avr128da48-adc-ac-voltage-measurement-mplab",
-        "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC of AVR DA microcontroller family",
+        "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC of AVR DA microcontroller family. This example configuration is generated with the MCC(v4.1.0) framework.",
         "ide": {
             "name": "MPLAB X",
             "semverRange": ">=5.45.0"
@@ -24,7 +24,7 @@
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=3.95.0"
+            "semverRange": ">=4.1.0"
         },
         "device": {
             "metaDataVersion": "1.0.0",
