@@ -54,9 +54,10 @@ In this demo,
 
 ## Software used:
 
-- [MPLAB X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
+- [MPLAB® X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide "MPLAB® X IDE v5.40")
 - [XC8 Compiler v2.32](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
-- [MPLAB Code Configurator (MCC) v4.1.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v3.95.0")
+- [MPLAB® Code Configurator (MCC) v4.1.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB® Code Configurator (MCC) v3.95.0")
+- [MPLAB® Code Configurator Library (CCL) v1.37.14](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB® Code Configurator Library (CCL) v1.37.14")
 - [AVR8bit Lib v2.7.0](https://www.microchip.com/mplab/mplab-code-configurator "AVR8bit Lib v2.3.0")
 - [AVR-Dx DFP 1.7.98](https://packs.download.microchip.com/ "AVR-Dx DFP 1.4.75")
 
@@ -176,7 +177,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ## 12.	RTC configuration:
 * RTC is configured in PIT (Periodic Interrupt Timer) mode, which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
-* In Project Resources tab, Select RTC (under Drivers--->Timer--->RTC) and Select Easy Setup.
+* In Project Resources tab, Select RTC (under Drivers--->Timer--->RTC) and Select Easy View.
 * Select the Internal 32.768KHz oscillator option from the dropdown menu against the RTC Clock Source Selection field, which uses 32.768 kHz oscillator as a clock source for the PIT.
 * Check the PITEN Enable option to enable the periodic interrupt timer mode.
 * Select the period RTC Clock Cycles 16 option from the drop-down menu against the Period Selection field which generates 500 microsec delay.
