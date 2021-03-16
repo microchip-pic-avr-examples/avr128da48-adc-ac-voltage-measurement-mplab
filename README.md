@@ -145,9 +145,9 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 </p>
 
 9.	Add ADC, VREF, USART and RTC peripherals to the project .
-* Click on Resource Management [MCC], located on top side of the window.
-* To add peripherals to the project, select ADC, VREF, RTC, USART	 under Device Resources and by clicking on (+) button as shown in Fig 13.
-* All selected peripherals should show up under Peripherals in Project Resources.
+* Click on Project Resources, located on top side of the window.
+* To add peripherals to the project, select ADC, VREF, RTC, USART under Device Resources---> under Drivers, by clicking on (+) button as shown in Fig 13.
+* All selected peripherals should be in Project Resources.
 
 <p align="center">
   <img width=auto height=auto src="images/peripheral-list.png">
@@ -155,9 +155,8 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 </p>
 
 ## 10.	System module configuration:
-* In Resource Management tab, Select System Module (Under Project Resources)---> Select Easy Setup.
-* The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency. 
-* To generate 4MHz frequency as a system clock, uncheck the Prescaler Enable option as shown in Fig 14.
+* In Project Resources tab, Select CLKCTRL (Under System) and Select Easy View.
+* The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency as shown in Fig 14. 
 
 <p align="center">
   <img width=auto height=auto src="images/systemModule.png">
@@ -166,8 +165,8 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ## 11.	USART configuration:
 * USART 1 peripheral is used to transmit the measured AC voltage onto the terminal window. Configure the USART1 peripheral by following the steps as shown in the Fig 15.
-* In Project Resources tab, Select USART 1 (under Peripherals)---> Select Easy Setup.
-* Check the Printf support option, which allows to print a sequence of characters.
+* In Project Resources tab, Select USART 1 (under Drivers--->UART) and Select Easy View.
+* Enable the Printf support option, which allows to print a sequence of characters.
 * Set the Baud Rate to 9600.
 
 <p align="center">
@@ -177,7 +176,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ## 12.	RTC configuration:
 * RTC is configured in PIT (Periodic Interrupt Timer) mode, which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
-* In Project Resources tab, Select RTC (under Peripherals)--> Select Easy Setup.
+* In Project Resources tab, Select RTC (under Drivers--->Timer--->RTC) and Select Easy Setup.
 * Select the Internal 32.768KHz oscillator option from the dropdown menu against the RTC Clock Source Selection field, which uses 32.768 kHz oscillator as a clock source for the PIT.
 * Check the PITEN Enable option to enable the periodic interrupt timer mode.
 * Select the period RTC Clock Cycles 16 option from the drop-down menu against the Period Selection field which generates 500 microsec delay.
@@ -190,9 +189,9 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ## 13.	VREF configuration :
 * VREF is configured to provide reference voltage for ADC peripheral. Configure the VREF peripheral by following the steps as shown in the Fig 17.
-* In Project Resources tab, Select VREF (under Peripherals)--> Select Easy Setup.
-* Check the Enable Force ADC Voltage Reference option to enable the reference voltage for ADC peripheral.  
-* Select the reference voltage VDD as reference from the drop-down menu against the ADC Voltage Reference.   
+* In Project Resources tab, Select VREF (under Drivers) and Select Easy View.
+* Enable the Enable Force ADC Voltage Reference option to enable the reference voltage for ADC peripheral.  
+* Select the reference voltage VDD as reference from the drop-down menu against the ADC Voltage Reference Source.   
 
 <p align="center">
   <img width=auto height=auto src="images/vref.png">
@@ -201,7 +200,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ## 14.	Global Interrupt configuration: 
 * To generate any interrupt like periodic interrupt, it is required to enable the Global Interrupt Enable.
-* In Project Resources tab, Select Interrupt Manager (under System)---> Select Easy Setup.
+* In Project Resources tab, Select Interrupt Manager (under System)---> Select Easy View.
 * Check the Global Interrupt Enable option which enables global interrupt as shown in Fig 18.
 
 <p align="center">
@@ -211,11 +210,11 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ## 15.	ADC configuration:
 * ADC is configured in differential mode and it is used to measure the ac voltage of the input signal. Configure the ADC peripheral by following the steps as shown in Fig 19.
-* In Project Resources tab, Select ADC0 (under Peripherals)---> Select Easy Setup.
-* Configure ADC in differential mode by selecting enabled option from the dropdown menu against the Differential Mode Conversion field.
-* Check the Enable ADC option, which enables the ADC.
-* Set the ADC sampling frequency to 114.285KHz.
-* Check the RESRDY: Result Ready Interrupt Enable option, which enables the ADC result ready interrupt.
+* In Project Resources tab, Select ADC0 (under Drivers)---> Select Easy View.
+* Configure ADC in differential mode by enabling the Differential Mode Conversion field.
+* Enable ADC option, which enables the ADC.
+* Set the ADC sampling frequency to 125KHz.
+* Enable the RESRDY: Result Ready Interrupt Enable option, which enables the ADC result ready interrupt.
 
 <p align="center">
   <img width=auto height=auto src="images/adc.png">
