@@ -125,11 +125,11 @@ In this demo,
 
 ## Conclusion : 
 
-The demo provides an example of differential ADC application using the 12-bit ADC peripheral on the new AVR-DA family. For more details about the peripheral’s configuration refer Appendix Atmel START Project creation. 
+The demo provides an example of differential ADC application using the 12-bit ADC peripheral on the new AVR-DA family. For more details about the peripheral’s configuration refer Appendix MCC Project Configuration section. 
 
-## Appendix: MPLAB X MCC Project creation
+## Appendix: MCC Project Configuration
 
-Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurator (MCC) and generate MPLAB project.
+Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurator (MCC) v4.1.0 and generate MPLAB project.
 ### Steps for creating a new project
 1.	Open **MPLAB X IDE** latest version.
 2.	Go to **File---> New Project** (click).
