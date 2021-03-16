@@ -1,0 +1,223 @@
+<config configVersion="1.1" device="AVR128DA48" coreVersion="5.1.0-i">
+   <usedClasses class="java.util.TreeMap">
+      <entry>
+         <string>ADC0</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>Application Builder</string>
+         <string>class com.microchip.mcc.redux.module.FrameworkModule</string>
+      </entry>
+      <entry>
+         <string>CLKCTRL</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>CPUINT</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>Configuration Bits</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>MAIN MANAGER</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>Pin Manager</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>RTC</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>USART1</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>VREF</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>meta</string>
+         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>module0</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module1</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module16</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module17</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module2</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module3</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module4</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module5</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module56</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module9</string>
+         <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
+      </entry>
+   </usedClasses>
+   <usedLibraries class="java.util.ArrayList">
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.redux.Library" version="1.37.14"/>
+   </usedLibraries>
+   <tokenMap class="java.util.TreeMap">
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="state"/>
+         <value>{&quot;modules&quot;:{&quot;module5&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-interrupt-v1&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;,&quot;label&quot;:&quot;mccDevice : meta&quot;}},&quot;scf_avr8_interrupt_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-interrupt-v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;CPUINT&quot;,&quot;label&quot;:&quot;CPUINT&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;initializer_system&quot;,&quot;label&quot;:&quot;module1 : initializer_system&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;interrupt&quot;:{&quot;iSreg&quot;:true}}}},&quot;module9&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-usart-v1&quot;,&quot;imports&quot;:{&quot;osc_clock&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;0.2.0&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;}},&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module3&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;,&quot;label&quot;:&quot;module3 : pin-standard&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;}},&quot;scf_avr8_usart_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-usart-v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;USART1&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;software&quot;:{&quot;printfSupport&quot;:true}}}},&quot;module56&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-adc-v1&quot;,&quot;imports&quot;:{&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;0.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module3&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;,&quot;label&quot;:&quot;module3 : pin-standard&quot;}},&quot;adc_reference_voltage&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;vref-general-parameters&quot;,&quot;version&quot;:&quot;0.1.0&quot;}},&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;1.0.1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;interrupt&quot;,&quot;label&quot;:&quot;module5 : interrupt&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;}},&quot;osc_clocks&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;0.2.0&quot;}},&quot;scf_avr8_adc_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-adc-v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;ADC0&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;hardware&quot;:{&quot;convmodeCtrla&quot;:true,&quot;leftadjCtrla&quot;:false},&quot;interrupt&quot;:{&quot;resrdyIntctrl&quot;:true},&quot;clockSettgins&quot;:{&quot;prescCtrlc&quot;:&quot;CLK_PER divided by 4&quot;,&quot;sampleLen&quot;:6.0},&quot;software&quot;:{&quot;anxattribspinkey1&quot;:{&quot;PD7&quot;:{&quot;cname&quot;:&quot;IO_PD7&quot;}}}}}},&quot;module17&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-rtc-v1&quot;,&quot;imports&quot;:{&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;0.1.0&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1.0.0&quot;}},&quot;scf_avr8_rtc_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-rtc-v1&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;RTC&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;periodicIntTmr&quot;:{&quot;pitenPitctrla&quot;:true,&quot;periodPitctrla&quot;:&quot;RTC Clock Cycles 16&quot;},&quot;interrupt&quot;:{&quot;pit&quot;:true}}}},&quot;module16&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-vref-v1&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1.0.0&quot;}},&quot;scf_avr8_vref_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-vref-v1&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;VREF&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;hardware&quot;:{&quot;alwaysonAdc0ref&quot;:true,&quot;refselAdc0ref&quot;:&quot;VDD as reference&quot;}}}},&quot;module3&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pin-content-processor&quot;,&quot;imports&quot;:{&quot;device-meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;pin-architecture&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-architecture&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module2&quot;,&quot;exportId&quot;:&quot;pin-architecture&quot;}}},&quot;payload&quot;:{&quot;saved&quot;:{&quot;rows&quot;:{&quot;module56&quot;:{&quot;ADC0$AINx$input&quot;:{&quot;pins&quot;:{&quot;PD6&quot;:{&quot;state&quot;:&quot;L&quot;},&quot;PD7&quot;:{&quot;state&quot;:&quot;L&quot;}}}}}}}}},&quot;content&quot;:{&quot;@mchp-mcc/pin-content-processor&quot;:&quot;3.1.6&quot;,&quot;@mchp-mcc/avr8-pin-manager&quot;:&quot;4.1.3&quot;,&quot;@mchp-mcc/scf-avr8-adc-v1&quot;:&quot;4.0.2&quot;,&quot;@mchp-mcc/scf-avr8-vref-v1&quot;:&quot;4.0.1&quot;,&quot;@mchp-mcc/scf-avr8-interrupt-v1&quot;:&quot;5.0.2&quot;,&quot;@mchp-mcc/scf-avr8-usart-v1&quot;:&quot;7.1.0&quot;,&quot;@mchp-mcc/main-manager&quot;:&quot;3.0.1&quot;,&quot;@mchp-mcc/scf-avr8-clkctrl-v1&quot;:&quot;5.2.3&quot;,&quot;@mchp-mcc/scf-avr8-rtc-v1&quot;:&quot;4.0.2&quot;,&quot;@mchp-mcc/avr8-configuration-bits-v1&quot;:&quot;4.2.4&quot;}}</value>
+      </entry>
+   </tokenMap>
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>mcc_generated_files\system\interrupt.h</file>
+         <hash>b022725fd38712775ab994c6c71f5d1db46d9e03a4337786bfb990f435a46c0e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\rtc\src\rtc.c</file>
+         <hash>f00253879c41ce9582c59bf0049bd0b8b36cd3cdb82a7959f4c0de808b7bd3c8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\compiler.h</file>
+         <hash>cd8ccb49c70c435946fd1364a94e0bd0ab4b45a649c8560c1a60790ffbf5c87a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\port.h</file>
+         <hash>0f58da0b5c380350f551f7131388b4e551c2ece419f2cf47b552f59ed730fcee</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\interrupt_avr8.h</file>
+         <hash>9ca6dca8ea6749de252804707bcbbfd9caf17fe230624dfce76892d5ebe15918</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\utils_assert.h</file>
+         <hash>4dac733856c181ea02b984584e002ab6602bbd1529b07130d756878b088090c3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\pins.h</file>
+         <hash>904ff7b82992a48daf37b7faaa9a822eae2626a25869f911607cd3304f739436</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\assembler\iar.h</file>
+         <hash>4f4a2cc226de514f91434963aa05b2a51c6cbda4d702d4fab33d7fd94b2abf8e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\pins.c</file>
+         <hash>5c57287a1b9e323aaa6430cbb9d3ca0c0c1f4658ea7426b73361676b97a12fc3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\rtc\rtc.h</file>
+         <hash>77a09712fc1953ceddbe4db7d119b4d5a20fb1a9fd9ba7dc8612214e1c8f586e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart\src\usart1.c</file>
+         <hash>9da7ba07b91f419585c7a2d91d62a7562446ed8fa88fd7125366b94d50dfe578</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart\uart_interface.h</file>
+         <hash>6d8d343d83a77192dfab6c2ff6c6507c5c8d0d77be18e5be97c8161a09f6048a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\clock.c</file>
+         <hash>1395e9866df8a8b0f2a18f97b64b153afe8fed259bdb9d6fad1a2a46f6deb7b0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\clock.h</file>
+         <hash>693180e24d90c00271989391012460e9c781c67aa82eba52e23cdc44783ba300</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\atomic.h</file>
+         <hash>185b1d0e4bccfcfd7d30c7ab8dc3fd6292ff7d1315696606ba024a71d28bc150</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\ccp.h</file>
+         <hash>122411d35b252fac49fab921ba423e596d385b3ed146d6d63fad819948f3ee19</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\system.h</file>
+         <hash>e4a7266529462dbecdc8c011358e9774bf9eb687033ecd96f1ed1094d515b474</hash>
+      </entry>
+      <entry>
+         <file>main.c</file>
+         <hash>e3c4a1301b84e96f2895b14f7a84031348c9ed5eb5ada6671330938bdd1af60a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart\usart1.h</file>
+         <hash>3954a41a6549e7dedaaaf884b7891769253a34d711bb617b314a6176d7fbea67</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\assembler\gas.h</file>
+         <hash>7b7d86cf572705f5ec7320fe9757849cec759bf6d1a7de714aedb6df196bc3a9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adc\src\adc0.c</file>
+         <hash>10866d816a3d8b7da0f7f2f48fa262718545f93974ff2bd6473b8dd1edca7fb0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\interrupt.c</file>
+         <hash>c6305d3c711a39eefec2186f209d59d310d55516fbf1c22c78402e117f285008</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\vref\vref.h</file>
+         <hash>440d0041518b25ba4c7598cc45caab53af65f5862010dbc7cb7fa9137066c81d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\vref\src\vref.c</file>
+         <hash>46a4df6f7218ce051939c276e7c20ef526254822b375f36d72559f4b314f81f0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\utils.h</file>
+         <hash>2c6e30d4635546d63725106f17841cff483e627b7ea631be4ac1b7e2df857a50</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adc\adc0.h</file>
+         <hash>54b8b8af88843c1f21df3ffc8f0ecbd97cbf13780ba05634fbdc909b1c7d929a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\assembler.h</file>
+         <hash>d3df250fcc04a8c6a592092caaebbca5cfbac33fd2fa0a566fe57731647f99bc</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\config_bits.c</file>
+         <hash>1aa5bb87e5a56980acf55458aeca303c6cf5866f1174dbdf4967c8b840cbacac</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\protected_io.S</file>
+         <hash>a8e77e3cb25e5b322a3e0bcfc2271a4a64a7381e553948b4d2bb370492af12b8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\protected_io.h</file>
+         <hash>960008b2e819df72bbab290a2ec48013da2b4b859db5c55a9c6d91fd3dd183cf</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\system.c</file>
+         <hash>41b8e04b6571f412e88fce43db88f905b64d42e6c12a7c1260b636698d3bf56d</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
+</config>
