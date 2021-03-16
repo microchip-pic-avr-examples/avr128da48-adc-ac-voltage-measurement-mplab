@@ -179,9 +179,9 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 * RTC is configured in PIT (Periodic Interrupt Timer) mode, which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
 * In Project Resources tab, Select RTC (under Drivers--->Timer--->RTC) and Select Easy View.
 * Select the Internal 32.768KHz oscillator option from the dropdown menu against the RTC Clock Source Selection field, which uses 32.768 kHz oscillator as a clock source for the PIT.
-* Check the PITEN Enable option to enable the periodic interrupt timer mode.
+* Enable the PITEN Enable option to enable the periodic interrupt timer mode.
 * Select the period RTC Clock Cycles 16 option from the drop-down menu against the Period Selection field which generates 500 microsec delay.
-* Check the Periodic Interrupt Enable option to generate periodic interrupt after specified delay.
+* Enable the Periodic Interrupt Enable option to generate periodic interrupt after specified delay.
 
 <p align="center">
   <img width=auto height=auto src="images/rtc.png">
