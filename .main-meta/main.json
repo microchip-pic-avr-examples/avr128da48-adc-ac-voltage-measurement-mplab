@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.avr128da48-adc-ac-voltage-measurement-mplab",
-        "version": "2.0.0",
+        "version": "2.0.1",
         "displayName": "AC Voltage measurement MPLABX example",
         "projectName": "avr128da48-adc-ac-voltage-measurement-mplab",
         "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC of AVR DA microcontroller family. This example configuration is generated with the MCC(v4.1.0) framework.",
@@ -20,7 +20,7 @@
 		],
         "dfp": {
             "name": "AVR-Dx_DFP",
-            "semverRange": "^1.7.98"
+            "semverRange": "^1.8.112"
         },
         "configurator": {
             "name": "MCC",
@@ -38,7 +38,7 @@
         },
         "author": "Microchip",
         "subcategories": [
-            "MCC","Home Appliance",
+            "Home Appliance",
             [
                "Peripherals", "ADC"
             ],
@@ -53,9 +53,10 @@
             "ADC","RTC","USART"
         ],
         "keywords": [
-			"Signal Conditioning & Measurement",
+			"Signal Conditioning",
 			"Curiosity Nano",
-            "Voltage Detectors",
+            "Voltage Detector",
+			"AC",
 			"Melody"
         ],
 		"additionalData": {
