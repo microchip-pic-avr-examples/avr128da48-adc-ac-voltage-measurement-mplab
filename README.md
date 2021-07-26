@@ -1,4 +1,4 @@
-<!-- Please do not change this html logo with link -->
+﻿<!-- Please do not change this html logo with link -->
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="200"/></a>
 
 # AC voltage measurement using Differential ADC
@@ -54,7 +54,7 @@ In this demo,
 
 ## Software used:
 
-- [MPLAB® X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide "MPLAB® X IDE v5.40")
+- MPLAB® X IDE [v5.45.0 or newer](https://www.microchip.com/mplab/mplab-x-ide "MPLAB® X IDE v5.40")
 - [XC8 Compiler v2.32](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
 - [MPLAB® Code Configurator (MCC) v4.1.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB® Code Configurator (MCC) v3.95.0")
 - [MPLAB® Code Configurator Library (CCL) v1.37.14](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB® Code Configurator Library (CCL) v1.37.14")
