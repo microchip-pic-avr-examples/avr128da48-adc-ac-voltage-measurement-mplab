@@ -54,12 +54,12 @@ In this demo,
 
 ## Software used:
 
-- MPLAB® X IDE [v5.45.0 or newer](https://www.microchip.com/mplab/mplab-x-ide "MPLAB® X IDE v5.40")
-- [XC8 Compiler v2.32](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
-- [MPLAB® Code Configurator (MCC) v4.1.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB® Code Configurator (MCC) v3.95.0")
-- [MPLAB® Code Configurator Library (CCL) v1.37.14](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB® Code Configurator Library (CCL) v1.37.14")
-- [AVR8bit Lib v2.7.0](https://www.microchip.com/mplab/mplab-code-configurator "AVR8bit Lib v2.3.0")
-- [AVR-Dx DFP 1.7.98](https://packs.download.microchip.com/ "AVR-Dx DFP 1.4.75")
+- MPLAB® X IDE [v5.45.0 or newer](https://www.microchip.com/mplab/mplab-x-ide "v5.45.0 or newer")
+- XC8 Compiler [v2.20 or newer](https://www.microchip.com/mplab/compilers "v2.20 or newer")
+- MPLAB® Code Configurator (MCC) [v4.1.0 or newer](https://www.microchip.com/mplab/mplab-code-configurator "v4.1.0 or newer")
+- MPLAB® Code Configurator Library (CCL) [v1.37.14 or newer](https://www.microchip.com/mplab/mplab-code-configurator "v1.37.14 or newer")
+- AVR8bit Lib [v2.7.0 or newer](https://www.microchip.com/mplab/mplab-code-configurator "v2.7.0 or newer")
+- Microchip AVR-Dx Series Device Support [1.7.98 or newer device pack](https://packs.download.microchip.com/ "1.7.98 or newer device pack")
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
