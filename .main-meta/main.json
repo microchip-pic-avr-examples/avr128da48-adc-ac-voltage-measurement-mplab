@@ -10,21 +10,21 @@
         "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC of AVR DA microcontroller family. This example configuration is generated with the MCC(v4.1.0) framework.",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.45.0"
+            "semverRange": ">=6.0.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.32.0"
+				"semverRange": "^2.36.0"
 			}
 		],
         "dfp": {
             "name": "AVR-Dx_DFP",
-            "semverRange": "^1.8.112"
+            "semverRange": "^1.10.124"
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=4.1.0"
+            "semverRange": ">=5.1.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",

@@ -6,7 +6,7 @@
 ## Introduction
 The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to measure the voltage difference between the two input channels. This example demonstrates the AC voltage measurement using differential ADC.
 
-**Note:** ***This example could be generated with all the pin variants of AVR DA family of microcontrollers. This example configuration is generated with the MCC(v4.1.0) framework***
+**Note:** ***This example could be generated with all the pin variants of AVR DA family of microcontrollers. ***
 
 ## Useful links
 
@@ -54,12 +54,15 @@ In this demo,
 
 ## Software used:
 
-- MPLAB® X IDE [v5.45.0 or newer](https://www.microchip.com/mplab/mplab-x-ide "v5.45.0 or newer")
-- XC8 Compiler [v2.20 or newer](https://www.microchip.com/mplab/compilers "v2.20 or newer")
-- MPLAB® Code Configurator (MCC) [v4.1.0 or newer](https://www.microchip.com/mplab/mplab-code-configurator "v4.1.0 or newer")
-- MPLAB® Code Configurator Library (CCL) [v1.37.14 or newer](https://www.microchip.com/mplab/mplab-code-configurator "v1.37.14 or newer")
-- AVR8bit Lib [v2.7.0 or newer](https://www.microchip.com/mplab/mplab-code-configurator "v2.7.0 or newer")
-- Microchip AVR-Dx Series Device Support [1.7.98 or newer device pack](https://packs.download.microchip.com/ "1.7.98 or newer device pack")
+- MPLAB® X IDE [6.0.0 or newer](https://www.microchip.com/mplab/mplab-x-ide "6.0.0 or newer")
+- XC8 Compiler [2.36.0 or newer](https://www.microchip.com/mplab/compilers "2.36.0 or newer")
+- MPLAB® Code Configurator (MCC) [5.1.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator "5.1.1 or newer")
+- Microchip AVR-Dx Series Device Support [1.10.124 or newer device pack](https://packs.download.microchip.com/ "1.10.124 or newer device pack")
+- MCC Melody Core 2.1.13
+- ADC MCC Melody driver 4.2.2
+- UART MCC Melody driver 1.6.0
+- VREF MCC Melody driver 4.0.2
+- RTC MCC Melody driver 4.2.4
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
