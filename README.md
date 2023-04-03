@@ -56,8 +56,8 @@ In this demo,
 
 - [MPLAB® X IDE v6.05](https://www.microchip.com/mplab/mplab-x-ide "MPLAB® X IDE v6.05")
 - [XC8 Compiler v2.41](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.41")
-- [MPLAB® Code Configurator (MCC) v5.3.0]
-- [MPLAB® Code Configurator (MCC) Core v5.5.0]
+- MPLAB® Code Configurator (MCC) v5.3.0
+- MPLAB® Code Configurator (MCC) Core v5.5.0
 - [AVR-Dx DFP 2.3.272](https://packs.download.microchip.com/ "AVR-Dx DFP 1.4.75")
 
 
