@@ -146,9 +146,9 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 </p>
 
 9.	Add ADC, VREF, USART and RTC peripherals to the project .
-	* Click on Resource Management[MCC], located on top side of the window.
-	* To add peripherals to the project, select ADC, VREF, RTC, USART under Device Resources---> under Drivers, by clicking on (+) button as shown in Fig 13.
-	* All selected peripherals should be in Project Resources.
+* 	Click on Resource Management[MCC], located on top side of the window.
+* 	To add peripherals to the project, select ADC, VREF, RTC, USART under Device Resources---> under Drivers, by clicking on (+) button as shown in Fig 13.
+* 	All selected peripherals should be in Project Resources.
 
 <p align="center">
   <img width=auto height=auto src="images/peripheral-list.png">
