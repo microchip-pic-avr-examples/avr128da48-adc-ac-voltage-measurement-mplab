@@ -1,4 +1,4 @@
-﻿<!-- Please do not change this html logo with link -->
+<!-- Please do not change this html logo with link -->
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="200"/></a>
 
 # AC voltage measurement using Differential ADC
@@ -6,7 +6,7 @@
 ## Introduction
 The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to measure the voltage difference between the two input channels. This example demonstrates the AC voltage measurement using differential ADC.
 
-**Note:** ***This example could be generated with all the pin variants of AVR DA family of microcontrollers. ***
+**Note:** ***This example could be generated with all the pin variants of AVR DA family of microcontrollers. This example configuration is generated with the MCC(v4.1.0) framework***
 
 ## Useful links
 
@@ -54,15 +54,12 @@ In this demo,
 
 ## Software used:
 
-- MPLAB® X IDE [6.0.0 or newer](https://www.microchip.com/mplab/mplab-x-ide "6.0.0 or newer")
-- XC8 Compiler [2.36.0 or newer](https://www.microchip.com/mplab/compilers "2.36.0 or newer")
-- MPLAB® Code Configurator (MCC) [5.1.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator "5.1.1 or newer")
-- Microchip AVR-Dx Series Device Support [1.10.124 or newer device pack](https://packs.download.microchip.com/ "1.10.124 or newer device pack")
-- MCC Melody Core 2.1.13
-- ADC MCC Melody driver 4.2.2
-- UART MCC Melody driver 1.6.0
-- VREF MCC Melody driver 4.0.2
-- RTC MCC Melody driver 4.2.4
+- [MPLAB® X IDE v6.05](https://www.microchip.com/mplab/mplab-x-ide "MPLAB® X IDE v6.05")
+- [XC8 Compiler v2.41](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.41")
+- [MPLAB® Code Configurator (MCC) v5.3.0]
+- [MPLAB® Code Configurator (MCC) Core v5.5.0]
+- [AVR-Dx DFP 2.3.272](https://packs.download.microchip.com/ "AVR-Dx DFP 1.4.75")
+
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
