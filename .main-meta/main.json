@@ -7,24 +7,24 @@
         "version": "2.0.1",
         "displayName": "AC Voltage measurement MPLABX example",
         "projectName": "avr128da48-adc-ac-voltage-measurement-mplab",
-        "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC of AVR DA microcontroller family. This example configuration is generated with the MCC(v4.1.0) framework.",
+        "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC of AVR DA microcontroller family. This example configuration is generated with the MCC(v5.3.0) framework.",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.45.0"
+            "semverRange": ">=6.05.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.32.0"
+				"semverRange": "^2.41.0"
 			}
 		],
         "dfp": {
             "name": "AVR-Dx_DFP",
-            "semverRange": "^1.8.108"
+            "semverRange": "^2.3.272"
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=4.1.0"
+            "semverRange": ">=5.3.0"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,19 +36,8 @@
                 "versionRange": "*"
             }
         },
-        "author": "Microchip",
-        "subcategories": [
-            "MCC","Home Appliance",
-            [
-               "Peripherals", "ADC"
-            ],
-            [
-               "Peripherals", "RTC"
-            ],
-			[
-               "Peripherals", "USART"
-            ]
-        ],
+        "author": "Usha G",
+        
         "peripherals": [
             "ADC","RTC","USART"
         ],

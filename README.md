@@ -6,7 +6,7 @@
 ## Introduction
 The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to measure the voltage difference between the two input channels. This example demonstrates the AC voltage measurement using differential ADC.
 
-**Note:** ***This example could be generated with all the pin variants of AVR DA family of microcontrollers. This example configuration is generated with the MCC(v4.1.0) framework***
+**Note:** ***This example could be generated with all the pin variants of AVR DA family of microcontrollers. This example configuration is generated with the MCC(v5.3.0) framework***
 
 ## Useful links
 
