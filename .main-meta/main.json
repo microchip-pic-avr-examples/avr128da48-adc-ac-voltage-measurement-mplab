@@ -42,9 +42,9 @@
             "ADC","RTC","USART"
         ],
         "keywords": [
-			"Signal Conditioning & Measurement",
+			"Signal Conditioning",
 			"Curiosity Nano",
-            "Voltage Detectors",
+            "Voltage Detector",
 			"Melody"
         ],
 		"additionalData": {
