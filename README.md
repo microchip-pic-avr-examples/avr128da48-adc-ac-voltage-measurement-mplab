@@ -156,8 +156,8 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 </p>
 
 ### 10.	System module configuration:
-	* In Project Resources tab, Select CLKCTRL (Under System) and Select Easy View.
-	* The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency as shown in Fig 14. 
+* In Project Resources tab, Select CLKCTRL (Under System) and Select Easy View.
+* The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency as shown in Fig 14. 
 
 <p align="center">
   <img width=auto height=auto src="images/systemModule.png">
@@ -165,10 +165,10 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 </p>
 
 ### 11.	USART configuration:
-	* USART 1 peripheral is used to transmit the measured AC voltage onto the terminal window. Configure the USART1 peripheral by following the steps as shown in the Fig 15.
-	* In Project Resources tab, Select USART 1 (under Drivers--->UART) and Select Easy View.
-	* Enable the Printf support option, which allows to print a sequence of characters.
-	* Set the Baud Rate to 9600.
+* USART 1 peripheral is used to transmit the measured AC voltage onto the terminal window. Configure the USART1 peripheral by following the steps as shown in the Fig 15.
+* In Project Resources tab, Select USART 1 (under Drivers--->UART) and Select Easy View.
+* Enable the Printf support option, which allows to print a sequence of characters.
+* Set the Baud Rate to 9600.
 
 <p align="center">
   <img width=auto height=auto src="images/usart.png">
