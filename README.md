@@ -19,7 +19,7 @@ The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to
 
 <p align="center">
   <img width=auto height=auto src="images/blockdiagram.png">
-  <br>Fig 1: Block diagram view of the system used for AC voltage measurement<br>
+  <br>Fig. 1: Block diagram view of the system used for AC voltage measurement<br>
 </p>
 
 In this demo,
@@ -29,7 +29,7 @@ In this demo,
 
 <p align="center">
   <img width=auto height=auto src="images/waveform.png">
-  <br>Fig 2: Waveform of AC signal input to the MCU<br>
+  <br>Fig. 2: Waveform of AC signal input to the MCU<br>
 </p>
 
 * Periodic interrupt is used as a trigger for the ADC to start the conversion for every 500 microsecs delay. 
@@ -49,7 +49,7 @@ In this demo,
 
 <p align="center">
   <img width=auto height=auto src="images/firmwareflowchart.png">
-  <br>Fig 3: Application Code flow diagram<br>
+  <br>Fig. 3: Application Code flow diagram<br>
 </p>
 
 ## Software used:
@@ -70,57 +70,57 @@ In this demo,
 
 <p align="center">
   <img width=600 height=auto src="images/curiositynanoboard.png">
-  <br>Fig 4 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
+  <br>Fig. 4 : AVR128DA48 Curiosity Nano Evaluation Kit<br>
 </p> 
 
 ## Hardware setup:
 
 <p align="center">
   <img width=600 height=auto src="images/hardwaresetup.png">
-  <br>Fig 5 : Hardware setup<br>
+  <br>Fig. 5 : Hardware setup<br>
 </p> 
 
 <p align="center">
   <img width=600 height=auto src="images/voltagestepdownblockdiagram.png">
-  <br>Fig 6 : Voltage stepdown block diagram<br>
+  <br>Fig. 6 : Voltage stepdown block diagram<br>
 </p> 
 
 <p align="center">
   <img width=600 height=auto src="images/hardwareconnectionsblockdiagram.png">
-  <br>Fig 7 : Hardware connections diagram<br>
+  <br>Fig. 7 : Hardware connections diagram<br>
 </p> 
 
 ## Demo Operation
 
-* Setup the hardware as shown in hardware setup section and in Fig 5.
+* Setup the hardware as shown in hardware setup section and in Fig. 5.
 * After the curiosity nano board is powered up, load the application firmware to AVR128DA48 microcontroller.
 * Set the desired AC input voltage and frequency from the AC source and check the data displayed on terminal window.
-* Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 8.
+* Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig. 8.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput1.png">
-  <br>Fig 8 : Observed output on terminal window for 50V AC input voltage and 50Hz frequency<br>
+  <br>Fig. 8 : Observed output on terminal window for 50V AC input voltage and 50Hz frequency<br>
 </p> 
 
-* Set the AC input voltage to 250V and frequency to 50Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 9.
+* Set the AC input voltage to 250V and frequency to 50Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig. 9.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput2.png">
-  <br>Fig 9 : Observed output on terminal window for 250V AC input voltage and 50Hz frequency<br>
+  <br>Fig. 9 : Observed output on terminal window for 250V AC input voltage and 50Hz frequency<br>
 </p> 
 
-* Set the AC input voltage to 50V and frequency to 60Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 10.
+* Set the AC input voltage to 50V and frequency to 60Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig. 10.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput3.png">
-  <br>Fig 10 : Observed output on terminal window for 50V AC input voltage and 60Hz frequency<br>
+  <br>Fig. 10 : Observed output on terminal window for 50V AC input voltage and 60Hz frequency<br>
 </p>
 
-* Set the AC input voltage to 110V and frequency to 60Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 11.
+* Set the AC input voltage to 110V and frequency to 60Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig. 11.
 
 <p align="center">
   <img width=auto height=auto src="images/demooutput4.png">
-  <br>Fig 11 : Observed output on terminal window for 110V AC input voltage and 60Hz frequency<br>
+  <br>Fig. 11 : Observed output on terminal window for 110V AC input voltage and 60Hz frequency<br>
 </p>
 
 ## Conclusion : 
@@ -142,93 +142,93 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 <p align="center">
   <img width=auto height=auto src="images/MCC-Icon.png">
-  <br>Fig 12: MCC symbol on MPLAB X IDE<br>
+  <br>Fig. 12: MCC symbol on MPLAB X IDE<br>
 </p>
 
-9.	Add ADC, VREF, USART and RTC peripherals to the project .
-* 	Click on Resource Management[MCC], located on top side of the window.
-* 	To add peripherals to the project, select ADC, VREF, RTC, USART under Device Resources---> under Drivers, by clicking on (+) button as shown in Fig 13.
-* 	All selected peripherals should be in Project Resources.
+9.	Add ADC,  V<sub>REF</sub>, USART and RTC peripherals to the project .
+* 	Click the Resource Management [MCC], located on top side of the window.
+* 	To add peripherals to the project, select the ADC, V<sub>REF</sub>, RTC, USART, and open the **Drivers** tree from **Device Resources**. Then, click the (+)button as shown in the image below.
+* 	All the selected peripherals must be in Project Resources.
 
 <p align="center">
   <img width=auto height=auto src="images/peripheral-list.png">
-  <br>Fig 13: Add peripherals in Project Resources<br>
+  <br>Fig. 13: Add peripherals in Project Resources<br>
 </p>
 
 ### 10.	System module configuration:
 * In Project Resources tab, Select CLKCTRL (Under System) and Select Easy View.
-* The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency as shown in Fig 14. 
+* The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency as shown in Fig. 14. 
 
 <p align="center">
   <img width=auto height=auto src="images/systemModule.png">
-  <br>Fig 14: System module configuration window <br>
+  <br>Fig. 14: System module configuration window <br>
 </p>
 
 ### 11.	USART configuration:
-* USART 1 peripheral is used to transmit the measured AC voltage onto the terminal window. Configure the USART1 peripheral by following the steps as shown in the Fig 15.
-* In Project Resources tab, Select USART 1 (under Drivers--->UART) and Select Easy View.
+* USART1 peripheral is used to transmit the measured AC voltage to the terminal window. Configure the USART1 peripheral by following the steps, as shown in Fig. 15.
+* In the **Project Resources** tab, select USART1 by clicking Drivers and UART, then select **Easy View**.
 * Enable the Printf support option, which allows to print a sequence of characters.
 * Set the Baud Rate to 9600.
 
 <p align="center">
   <img width=auto height=auto src="images/usart.png">
-  <br>Fig 15: USART configuration window <br>
+  <br>Fig. 15: USART configuration window <br>
 </p>
 
 ### 12.	RTC configuration:
-* RTC is configured in PIT (Periodic Interrupt Timer) mode, which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
-* In Project Resources tab, Select RTC (under Drivers--->Timer--->RTC) and Select Easy View.
-* Select the Internal 32.768KHz oscillator option from the dropdown menu against the RTC Clock Source Selection field, which uses 32.768 kHz oscillator as a clock source for the PIT.
+* RTC is configured in PIT (Periodic Interrupt Timer) mode, which generates a periodic interrupt after every 500 μs. The periodic interrupt is used as a trigger for the ADC to start differential conversion .Configure the RTC peripheral by following the steps as shown in the Fig. 16.
+* In the **Project Resources** tab, select RTC, click Drivers, Timer, and RTC, then select **Easy View**.
+* Select the Internal 32.768 KHz oscillator option from the dropdown menu against the RTC Clock Source Selection field, which uses 32.768 KHz oscillator as a clock source for the PIT.
 * Enable the PITEN Enable option to enable the periodic interrupt timer mode.
-* Select the period RTC Clock Cycles 16 option from the drop-down menu against the Period Selection field which generates 500 microsec delay.
+* Select the period RTC Clock Cycles 16 option from the dropdown menu against the Period Selection field which generates 500 μs delay.
 * Enable the Periodic Interrupt Enable option to generate periodic interrupt after specified delay.
 
 <p align="center">
   <img width=auto height=auto src="images/rtc.png">
-  <br>Fig 16: RTC configuration window <br>
+  <br>Fig. 16: RTC configuration window <br>
 </p>
 
-### 13.	VREF configuration :
-* VREF is configured to provide reference voltage for ADC peripheral. Configure the VREF peripheral by following the steps as shown in the Fig 17.
-* In Project Resources tab, Select VREF (under Drivers) and Select Easy View.
+### 13.	V<sub>REF</sub> configuration :
+* V<sub>REF</sub> is configured to provide reference voltage for ADC peripheral. Configure the V<sub>REF</sub> peripheral by following the steps as shown in the Fig. 17.
+* In **Project Resources** tab, click V<sub>REF</sub> and select **Easy View**.
 * Enable the Enable Force ADC Voltage Reference option to enable the reference voltage for ADC peripheral.  
-* Select the reference voltage VDD as reference from the drop-down menu against the ADC Voltage Reference Source.   
+* Select the reference voltage V<sub>DD</sub> as reference from the drop-down menu against the ADC Voltage Reference Source.   
 
 <p align="center">
   <img width=auto height=auto src="images/vref.png">
-  <br>Fig 17: VREF configuration window <br>
+  <br>Fig. 17: VREF configuration window <br>
 </p>
 
 ### 14.	Global Interrupt configuration: 
 * To generate any interrupt like periodic interrupt, it is required to enable the Global Interrupt Enable.
-* In Project Resources tab, Select Interrupt Manager (under System)---> Select Easy View.
-* Check the Global Interrupt Enable option which enables global interrupt as shown in Fig 18.
+* In the **Project Resources** tab, select Interrupt Manager, and from the System tree select Easy View.
+* Check the Global Interrupt Enable option which enables global interrupt, as shown in Fig. 18.
 
 <p align="center">
   <img width=auto height=auto src="images/globalinterrupt.png">
-  <br>Fig 18: Global Interrupt configuration window <br>
+  <br>Fig. 18: Global Interrupt configuration window <br>
 </p>
 
 ### 15.	ADC configuration:
-* ADC is configured in differential mode and it is used to measure the ac voltage of the input signal. Configure the ADC peripheral by following the steps as shown in Fig 19.
-* In Project Resources tab, Select ADC0 (under Drivers)---> Select Easy View.
-* Configure ADC in differential mode by enabling the Differential Mode Conversion field.
-* Enable ADC option, which enables the ADC.
-* Set the ADC sampling frequency to 125KHz.
+* ADC is configured in Differential mode and it is used to measure the AC voltage of the input signal. Configure the ADC peripheral by following the steps, as shown in Fig. 19.
+* In the **Project Resources** tab, select ADC0, then click on Drivers and select Easy View.
+* Configure ADC in Differential mode by enabling the Differential Mode Conversion field.
+* Enable the ADC option, to enable the ADC.
+* Set the ADC sampling frequency to 125 KHz.
 * Enable the RESRDY: Result Ready Interrupt Enable option, which enables the ADC result ready interrupt.
 
 <p align="center">
   <img width=auto height=auto src="images/adc.png">
-  <br>Fig 19: ADC configuration window <br>
+  <br>Fig. 19: ADC configuration window <br>
 </p>
 
 ### 16.	Pin manager configuration:
-* Configure I/O pin PD6 as input to the positive channel of the differential ADC, where step downed voltage with offset addition is fed as input to this positive channel . 
-* Configure I/O pin PD7 as input to the negative channel of the differential ADC, where reference voltage is fed as input to this negative channel.
+* Configure the I/O pin PD6 as an input for the differential ADC positive channel, then the step down voltage and the offset addition are fed as an input to the positive channel.  
+* Configure the I/O pin PD7 as an input for the differential ADC negative channel, then the reference voltage will be fed as an input to the negative channel.
 
 <p align="center">
   <img width=auto height=auto src="images/pinmodule.png">
-  <br>Fig 20: Pin manager configuration window<br>
+  <br>Fig. 20: Pin manager configuration window<br>
 </p>
 
 
