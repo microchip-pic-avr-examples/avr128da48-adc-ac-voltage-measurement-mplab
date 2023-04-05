@@ -25,14 +25,14 @@ The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to
 In this demo,
 
 * AC input to be measured is fed to the voltage stepdown circuit.
-* Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig 2  and reference offset voltage is given as input to the -ve channel of the ADC. 
+* Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig. 2  and reference offset voltage is given as input to the -ve channel of the ADC. 
 
 <p align="center">
   <img width=auto height=auto src="images/waveform.png">
   <br>Fig. 2: Waveform of AC signal input to the MCU<br>
 </p>
 
-* Periodic interrupt is used as a trigger for the ADC to start the conversion for every 500 microsecs delay. 
+* Periodic interrupt is used as a trigger for the ADC to start the conversion for every 500 μs delay. 
 * After capturing the required number of samples, RMS voltage is calculated using the captured sampled result and the formulae used for calculation is 
 
 <p align="center">
@@ -129,7 +129,7 @@ The demo provides an example of differential ADC application using the 12-bit AD
 
 ## Appendix: MCC Project Configuration
 
-Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurator (MCC) v4.1.0 and generate MPLAB project.
+Configure ADC, RTC, V<sub>REF</sub> and USART peripherals through Microchip Code Configurator (MCC) v4.1.0 and generate MPLAB project.
 ### Steps for creating a new project
 1.	Open **MPLAB X IDE** latest version.
 2.	Go to **File---> New Project** (click).
@@ -138,7 +138,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 5.	Select **Tool** is optional (Press Next).
 6.	Select Latest **XC8 Compiler**. (Press Next).
 7.	Enter **Project Name** and **File location**. (Press Finish).
-8.	Click on **MCC** symbol to configure peripherals as shown in Fig 12
+8.	Click on **MCC** symbol to configure peripherals as shown in Fig. 12
 
 <p align="center">
   <img width=auto height=auto src="images/MCC-Icon.png">
@@ -156,7 +156,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 </p>
 
 ### 10.	System module configuration:
-* In Project Resources tab, Select CLKCTRL (Under System) and Select Easy View.
+* In the **Project Resources** tab, select CLKCTRL (Under System), then select **Easy View**.
 * The Internal Oscillator option is selected as a clock source and by default 4 MHz system clock is selected as Oscillator frequency as shown in Fig. 14. 
 
 <p align="center">
@@ -190,18 +190,18 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ### 13.	V<sub>REF</sub> configuration :
 * V<sub>REF</sub> is configured to provide reference voltage for ADC peripheral. Configure the V<sub>REF</sub> peripheral by following the steps as shown in the Fig. 17.
-* In **Project Resources** tab, click V<sub>REF</sub> and select **Easy View**.
+* In the **Project Resources** tab, click V<sub>REF</sub> and select **Easy View**.
 * Enable the Enable Force ADC Voltage Reference option to enable the reference voltage for ADC peripheral.  
 * Select the reference voltage V<sub>DD</sub> as reference from the drop-down menu against the ADC Voltage Reference Source.   
 
 <p align="center">
   <img width=auto height=auto src="images/vref.png">
-  <br>Fig. 17: VREF configuration window <br>
+  <br>Fig. 17: V<sub>REF</sub> configuration window <br>
 </p>
 
 ### 14.	Global Interrupt configuration: 
 * To generate any interrupt like periodic interrupt, it is required to enable the Global Interrupt Enable.
-* In the **Project Resources** tab, select Interrupt Manager, and from the System tree select Easy View.
+* In the **Project Resources** tab, select Interrupt Manager, and from the System tree select **Easy View**.
 * Check the Global Interrupt Enable option which enables global interrupt, as shown in Fig. 18.
 
 <p align="center">
@@ -211,7 +211,7 @@ Configure ADC, RTC, VREF and USART peripherals through Microchip Code Configurat
 
 ### 15.	ADC configuration:
 * ADC is configured in Differential mode and it is used to measure the AC voltage of the input signal. Configure the ADC peripheral by following the steps, as shown in Fig. 19.
-* In the **Project Resources** tab, select ADC0, then click on Drivers and select Easy View.
+* In the **Project Resources** tab, select ADC0, then click on Drivers and select **Easy View**.
 * Configure ADC in Differential mode by enabling the Differential Mode Conversion field.
 * Enable the ADC option, to enable the ADC.
 * Set the ADC sampling frequency to 125 KHz.
