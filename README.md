@@ -59,7 +59,8 @@ In this demo,
 - MPLAB® Code Configurator (MCC) v5.3.0
 - MPLAB® Code Configurator (MCC) Core v5.5.0
 - [AVR-Dx DFP 2.3.272](https://packs.download.microchip.com/ "AVR-Dx DFP 1.4.75")
-
+- ADC Driver v4.2.5
+- UART Driver v1.8.0
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
